@@ -30,7 +30,7 @@ function App() {
       redirect: 'follow'
     };
 
-    fetch("http://ec2-34-233-208-74.compute-1.amazonaws.com:5000/create", requestOptions)
+    fetch("//ec2-34-233-208-74.compute-1.amazonaws.com:5000/create", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
@@ -49,7 +49,7 @@ function App() {
       redirect: 'follow'
     };
 
-    fetch("http://ec2-34-233-208-74.compute-1.amazonaws.com:5000/query", requestOptions)
+    fetch("//ec2-34-233-208-74.compute-1.amazonaws.com:5000/query", requestOptions)
       .then(response => response.text())
       .then(result => {
         console.log(result);
@@ -73,7 +73,7 @@ function App() {
       redirect: 'follow'
     };
 
-    fetch("http://ec2-34-233-208-74.compute-1.amazonaws.com:5000/update", requestOptions)
+    fetch("//ec2-34-233-208-74.compute-1.amazonaws.com:5000/update", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
